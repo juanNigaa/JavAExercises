@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <button>Inicia</button>
+    <script>
+       
+        var colores = ["yellow", "pink", "red", "blue", "green", "orange", "purple", "cyan", "brown", "black"];
+        var indice = 0;  
+        var interval = setInterval(cambiarColor, 2000);
+
+        function cambiarColor() {
+            
+            for (var i = 0; i < colores.length; i++) {
+                if (i == indice) {
+                    document.body.style.backgroundColor = colores[i]; 
+                }
+            }
+            
+            indice++;
+            if (indice >= colores.length) {
+                indice = 0;
+            }
+        }
+    </script>
+    
+</body>
+</html>

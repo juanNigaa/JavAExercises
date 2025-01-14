@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio4</title>
+</head>
+<body>
+    <form action="" onsubmit="return false;">
+    <select name="Selecion" id="Selecion">
+        <option value="https://www.marca.com/videojuegos/kings-league/2025/01/12/6783d4a5f49425d14df028ca-directo.html">Marca</option>
+        <option value="https://www.laverdad.es/">La verdad</option>
+        <option value="https://ces-vegamedia.es/secundaria/#">Ces vegamedia</option>
+        <option value="https://www.pccomponentes.com/">Pc componentes</option>
+    </select>
+    <button onclick="tomada()">Abrir</button>
+</form>
+
+<script>
+    function tomada() {
+        var link=document.getElementById("Selecion").value;
+        window.open(link,"_blank");   
+    }
+    
+</script>
+</body>
+</html>
